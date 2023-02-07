@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'react';
-import Movie from '../components/Movie';
+import { useState } from 'react';
+import Movie from '../components/Movie/Movie';
 import { useMovies } from '../hooks/useMovies';
 
 const HomePage = () => {

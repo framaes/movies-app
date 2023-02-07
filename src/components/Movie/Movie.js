@@ -1,5 +1,5 @@
 import React from "react";
-import { IMAGE_URL } from "../utils/contants";
+import { IMAGE_URL } from "../../utils/constants";
 
 const Movie = (props) => {
 
