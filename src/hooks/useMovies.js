@@ -1,13 +1,11 @@
 import { useState, useEffect } from 'react';
-import { BASE_URL, API_KEY, LANG } from '../utils/contants';
+import { fetchMovies } from '../services/fetchMovies';
 
 export const useMovies = (page) => {
     const [movies, setMovies] = useState([]);
 
     useEffect(() => {
-        fetch(`${BASE_URL}movie/popular?api_key=${API_KEY}&language=${LANG}&page=${page}`).then(response => response.json().then(data => {
-            setMovies(data.results)
-        }))
+        fetchMovies(page).then(data => setMovies(data))
     }, [page]);
     return { movies };
 }
