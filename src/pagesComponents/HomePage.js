@@ -20,7 +20,7 @@ const HomePage = () => {
     }
 
     return movies ? (
-        <>
+        <div className='page'>
             <div>
                 <button onClick={previousClickHandler}>Previous</button>
                 {page}
@@ -32,7 +32,7 @@ const HomePage = () => {
                     <Movie key={movie.id} movie={movie} />
                 ))}
             </ul>
-        </>
+        </div>
     )
         : <div>Loading...</div>
 }

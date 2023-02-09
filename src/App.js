@@ -6,8 +6,8 @@ function App() {
 
   return (
     <Router>
-      <Header />
-      <AppRouter />
+        <Header />
+        <AppRouter />
     </Router>
   )
 }
